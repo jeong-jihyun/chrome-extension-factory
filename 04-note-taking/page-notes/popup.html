@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>페이지 메모</title>
+  <style>
+    body { width: 380px; margin: 0; padding: 12px; font: 13px/1.5 "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #222; }
+    h1 { font-size: 15px; margin: 0 0 6px; }
+    .tabs { display: flex; gap: 4px; margin-bottom: 8px; }
+    .tabs button { flex: 1; }
+    button { padding: 5px 10px; border: 1px solid #888; border-radius: 4px; background: #f4f4f4; cursor: pointer; font: inherit; }
+    button.on { background: #1a73e8; border-color: #1a73e8; color: #fff; }
+    textarea { width: 100%; box-sizing: border-box; height: 130px; padding: 6px; border: 1px solid #bbb; border-radius: 4px; font: inherit; resize: vertical; }
+    input[type=search] { width: 100%; box-sizing: border-box; padding: 6px; border: 1px solid #bbb; border-radius: 4px; font: inherit; margin-bottom: 6px; }
+    .row { display: flex; gap: 6px; margin: 6px 0; align-items: center; }
+    .hint { color: #666; font-size: 12px; }
+    #target { font-size: 12px; color: #555; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    ul { list-style: none; padding: 0; margin: 0; max-height: 240px; overflow-y: auto; border-top: 1px solid #ddd; }
+    li { padding: 6px 0; border-bottom: 1px solid #eee; }
+    li .h { font-weight: bold; cursor: pointer; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; display: block; }
+    li .b { color: #555; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    #msg { min-height: 18px; color: #0a7a2f; }
+    [hidden] { display: none !important; }
+  </style>
+</head>
+<body>
+  <h1>페이지 메모</h1>
+  <div class="tabs">
+    <button id="tabWrite" class="on">메모 쓰기</button>
+    <button id="tabList">전체 메모</button>
+  </div>
+
+  <section id="write">
+    <div class="row">
+      <button id="scopePage" class="on">이 페이지</button>
+      <button id="scopeSite">이 사이트 전체</button>
+    </div>
+    <div id="target" class="hint"></div>
+    <textarea id="text" placeholder="여기에 적으면 자동으로 저장됩니다."></textarea>
+    <div class="row"><button id="remove">이 메모 지우기</button><span id="saved" class="hint"></span></div>
+  </section>
+
+  <section id="all" hidden>
+    <input id="q" type="search" placeholder="메모·제목·주소에서 검색" />
+    <ul id="list"></ul>
+    <div class="row">
+      <button id="exportTxt">글 파일로 내보내기</button>
+      <button id="exportJson">JSON으로 내보내기</button>
+    </div>
+  </section>
+
+  <div id="msg" role="status"></div>
+  <script src="notes-core.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

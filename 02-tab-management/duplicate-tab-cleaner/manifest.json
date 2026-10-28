@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "중복 탭 정리기",
+  "version": "1.0.0",
+  "description": "같은 페이지가 여러 탭에 열려 있으면 목록으로 보여 주고, 한 번에 정리합니다. 닫은 탭은 되살릴 수 있습니다.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "중복 탭 정리",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

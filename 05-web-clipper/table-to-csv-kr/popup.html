@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>표 저장</title>
+  <style>
+    body { width: 380px; margin: 0; padding: 12px; font: 13px/1.5 "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #222; }
+    h1 { font-size: 15px; margin: 0 0 6px; }
+    button { padding: 6px 12px; border: 1px solid #888; border-radius: 4px; background: #f4f4f4; cursor: pointer; font: inherit; }
+    button.primary { background: #1a73e8; border-color: #1a73e8; color: #fff; }
+    button:disabled { opacity: .5; cursor: default; }
+    ul { list-style: none; padding: 0; margin: 8px 0; max-height: 200px; overflow-y: auto; border-top: 1px solid #ddd; }
+    li { padding: 6px 4px; border-bottom: 1px solid #eee; cursor: pointer; }
+    li.sel { background: #e8f0fe; }
+    li .n { font-weight: bold; }
+    li .p { display: block; color: #666; font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .row { display: flex; gap: 6px; margin: 8px 0; flex-wrap: wrap; align-items: center; }
+    #summary { font-weight: bold; }
+    #msg { min-height: 18px; color: #0a7a2f; }
+    #msg.err { color: #b00020; }
+    .hint { color: #666; font-size: 12px; }
+  </style>
+</head>
+<body>
+  <h1>표 → CSV 저장기</h1>
+  <div class="row"><button id="find">이 페이지에서 표 찾기</button></div>
+  <div id="summary"></div>
+  <ul id="list"></ul>
+  <label class="hint"><input type="checkbox" id="bom" checked /> 엑셀에서 한글이 깨지지 않게 저장(UTF-8 BOM)</label>
+  <div class="row">
+    <button id="save" class="primary" disabled>CSV로 저장</button>
+    <button id="copy" disabled>엑셀 붙여넣기용 복사</button>
+  </div>
+  <div id="msg" role="status"></div>
+  <script src="table-core.js"></script>
+  <script src="page-scripts.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

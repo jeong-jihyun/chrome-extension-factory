@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "표 → CSV 저장기",
+  "version": "1.0.0",
+  "description": "웹페이지의 표를 골라 엑셀에서 한글이 깨지지 않는 CSV로 저장하거나 클립보드로 복사합니다. 행 수 제한과 로그인이 없습니다.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "표 저장",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

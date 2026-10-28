@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "로컬 단축어 확장기",
+  "version": "1.0.0",
+  "description": "단축어를 입력하고 Tab을 누르면 미리 저장한 문구로 바뀝니다. 계정과 서버 없이 내 브라우저에만 저장됩니다.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "expand-core.js",
+        "content.js"
+      ],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "단축어 관리",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

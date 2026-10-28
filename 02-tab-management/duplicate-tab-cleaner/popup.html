@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>중복 탭 정리</title>
+  <style>
+    body { width: 360px; margin: 0; padding: 12px; font: 13px/1.5 "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #222; }
+    h1 { font-size: 15px; margin: 0 0 8px; }
+    .opts label { display: block; margin: 2px 0; }
+    button { padding: 6px 12px; border: 1px solid #888; border-radius: 4px; background: #f4f4f4; cursor: pointer; font: inherit; }
+    button.primary { background: #d93025; border-color: #d93025; color: #fff; }
+    button:disabled { opacity: .5; cursor: default; }
+    #summary { margin: 10px 0 6px; font-weight: bold; }
+    ul { list-style: none; padding: 0; margin: 0; max-height: 210px; overflow-y: auto; border-top: 1px solid #ddd; }
+    li { padding: 5px 0; border-bottom: 1px solid #eee; }
+    li .t { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    li .n { color: #b00020; font-size: 12px; }
+    .row { display: flex; gap: 6px; margin-top: 8px; }
+    #msg { min-height: 18px; margin-top: 6px; color: #0a7a2f; }
+  </style>
+</head>
+<body>
+  <h1>중복 탭 정리</h1>
+  <div class="opts">
+    <label><input type="checkbox" id="ignoreHash" checked /> 주소 끝의 # 부분은 무시</label>
+    <label><input type="checkbox" id="ignoreTracking" checked /> 광고 추적 꼬리표(utm 등)는 무시</label>
+    <label><input type="checkbox" id="allWindows" checked /> 모든 창의 탭을 검사</label>
+  </div>
+  <div class="row"><button id="scan">다시 검사</button></div>
+  <div id="summary"></div>
+  <ul id="list"></ul>
+  <div class="row">
+    <button id="clean" class="primary" disabled>중복 탭 닫기</button>
+    <button id="undo" disabled>방금 닫은 탭 되살리기</button>
+  </div>
+  <div id="msg" role="status"></div>
+  <script src="dedupe-core.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

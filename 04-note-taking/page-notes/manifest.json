@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "페이지 메모",
+  "version": "1.0.0",
+  "description": "지금 보는 페이지나 사이트에 짧은 메모를 남기고, 모든 메모를 검색하고 내보냅니다. 메모는 내 브라우저에만 저장됩니다.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "페이지 메모",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

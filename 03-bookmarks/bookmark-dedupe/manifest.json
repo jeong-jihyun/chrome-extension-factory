@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "북마크 중복 정리기",
+  "version": "1.0.0",
+  "description": "중복된 북마크와 빈 폴더를 찾아 보여 주고, 백업을 저장한 뒤 내가 고른 것만 정리합니다.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "bookmarks"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "북마크 중복 정리",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

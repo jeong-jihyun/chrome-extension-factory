@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>단축어 관리</title>
+  <style>
+    body { width: 340px; margin: 0; padding: 12px; font: 13px/1.5 "Malgun Gothic", "Apple SD Gothic Neo", sans-serif; color: #222; }
+    h1 { font-size: 15px; margin: 0 0 8px; }
+    label { display: block; margin: 6px 0 2px; font-weight: bold; }
+    input[type=text], textarea { width: 100%; box-sizing: border-box; padding: 6px; border: 1px solid #bbb; border-radius: 4px; font: inherit; }
+    textarea { height: 64px; resize: vertical; }
+    button { padding: 5px 10px; border: 1px solid #888; border-radius: 4px; background: #f4f4f4; cursor: pointer; font: inherit; }
+    button.primary { background: #1a73e8; border-color: #1a73e8; color: #fff; }
+    #msg { min-height: 18px; margin: 6px 0; color: #b00020; }
+    #msg.ok { color: #0a7a2f; }
+    ul { list-style: none; padding: 0; margin: 8px 0; max-height: 170px; overflow-y: auto; border-top: 1px solid #ddd; }
+    li { display: flex; gap: 6px; align-items: center; padding: 5px 0; border-bottom: 1px solid #eee; }
+    li code { font-weight: bold; min-width: 70px; }
+    li span { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #555; }
+    .hint { color: #666; font-size: 12px; }
+    .row { display: flex; gap: 6px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+  <h1>단축어 관리</h1>
+  <p class="hint">글 입력칸에서 단축어를 쓰고 <b>Tab</b>을 누르면 바뀝니다. <code>{날짜}</code> <code>{시간}</code> <code>{요일}</code>을 쓸 수 있습니다.</p>
+  <label for="shortcut">단축어 (예: ;인사)</label>
+  <input id="shortcut" type="text" maxlength="20" autocomplete="off" />
+  <label for="content">바뀔 내용</label>
+  <textarea id="content" maxlength="2000"></textarea>
+  <div class="row" style="margin-top:8px"><button id="add" class="primary">저장</button></div>
+  <div id="msg" role="status"></div>
+  <ul id="list"></ul>
+  <div class="row">
+    <button id="export">내보내기(JSON)</button>
+    <button id="importBtn">가져오기</button>
+    <input id="importFile" type="file" accept="application/json,.json" hidden />
+  </div>
+  <script src="expand-core.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

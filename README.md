@@ -19,11 +19,11 @@
 ## 분류 40개와 확장 개수
 | 분류 폴더 | 이름 | 확장 수 |
 |---|---|---|
-| 01-productivity | 생산성 | 0 |
-| 02-tab-management | 탭 관리 | 0 |
-| 03-bookmarks | 북마크 | 0 |
-| 04-note-taking | 메모 | 0 |
-| 05-web-clipper | 웹 클리퍼 | 0 |
+| 01-productivity | 생산성 | 1 |
+| 02-tab-management | 탭 관리 | 1 |
+| 03-bookmarks | 북마크 | 1 |
+| 04-note-taking | 메모 | 1 |
+| 05-web-clipper | 웹 클리퍼 | 1 |
 | 06-reading-mode | 읽기 모드 | 0 |
 | 07-translation | 번역 | 0 |
 | 08-language-learning | 언어 학습 | 0 |
