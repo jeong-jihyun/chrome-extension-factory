@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "한글 읽기 모드",
+  "version": "1.0.0",
+  "description": "긴 글을 한글에 맞는 줄 바꿈과 글꼴로 깔끔하게 보여 줍니다. 글자 크기·줄 간격·밝기를 고를 수 있고, 읽는 시간을 알려 줍니다. 계정과 서버가 없습니다.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "읽기 모드",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

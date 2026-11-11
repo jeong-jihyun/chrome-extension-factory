@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "글자·바이트 세기",
+  "version": "1.0.0",
+  "description": "글자 수와 바이트 수를 한 번에 세어 줍니다. 한글 2바이트(EUC-KR) 기준과 3바이트(UTF-8) 기준을 모두 보여 주고, 바이트 한도에 맞춰 자르거나 공백으로 채웁니다.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "글자·바이트 세기",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  }
+}

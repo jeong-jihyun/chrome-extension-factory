@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>영어 단어 상자</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>영어 단어 상자</h1>
+    <span id="counts" class="counts"></span>
+  </header>
+  <nav class="tabs" id="tabs">
+    <button type="button" data-tab="review" class="on">복습</button>
+    <button type="button" data-tab="list">목록</button>
+    <button type="button" data-tab="more">추가·내보내기</button>
+  </nav>
+
+  <section id="tab-review">
+    <div id="reviewEmpty" class="empty" hidden></div>
+    <div id="card" class="card" hidden>
+      <div id="cWord" class="word"></div>
+      <div id="cSentence" class="sentence"></div>
+      <div id="cBack" hidden>
+        <label class="lbl" for="cMeaning">뜻 (비어 있으면 직접 적어 두세요)</label>
+        <input id="cMeaning" maxlength="200" placeholder="예: 완화하다, 줄이다">
+        <a id="cDict" target="_blank" rel="noopener noreferrer" class="dict">네이버 영어사전에서 보기 ↗</a>
+      </div>
+      <div class="btns">
+        <button id="btnShow" type="button" class="primary">뜻 보기</button>
+        <button id="btnNo" type="button" class="no" hidden>몰랐어요</button>
+        <button id="btnYes" type="button" class="yes" hidden>알았어요</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="tab-list" hidden>
+    <input id="search" type="search" placeholder="단어·뜻 검색">
+    <ul id="items" class="items"></ul>
+  </section>
+
+  <section id="tab-more" hidden>
+    <h2>직접 담기</h2>
+    <form id="addForm" autocomplete="off">
+      <input id="aWord" placeholder="영어 단어 또는 표현" maxlength="60" required>
+      <input id="aMeaning" placeholder="뜻 (선택)" maxlength="200">
+      <input id="aSentence" placeholder="예문 (선택)" maxlength="300">
+      <button type="submit">담기</button>
+    </form>
+    <h2>내보내기·정리</h2>
+    <div class="btns">
+      <button id="btnCsv" type="button">CSV로 저장</button>
+      <button id="btnClear" type="button" class="danger">전체 지우기</button>
+    </div>
+    <p id="moreMsg" class="msg" role="status"></p>
+  </section>
+
+  <p class="hint">웹페이지에서 단어를 드래그 → 우클릭 → <b>단어 상자에 담기</b></p>
+  <script src="core.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

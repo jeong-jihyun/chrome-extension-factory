@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>한글 읽기 모드</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>한글 읽기 모드</h1>
+  <button id="toggle" class="primary" type="button" disabled>읽기 모드 켜기</button>
+  <p id="msg" class="msg" role="status"></p>
+
+  <section class="opts">
+    <label>글자 크기 <output id="fsOut"></output>
+      <input id="fontSize" type="range" min="14" max="30" step="1">
+    </label>
+    <label>줄 간격 <output id="lhOut"></output>
+      <input id="lineHeight" type="range" min="1.4" max="2.4" step="0.1">
+    </label>
+    <label>본문 너비 <output id="wOut"></output>
+      <input id="width" type="range" min="480" max="960" step="40">
+    </label>
+    <div class="row">
+      <span>배경</span>
+      <div class="seg" id="theme">
+        <button type="button" data-v="light">흰색</button>
+        <button type="button" data-v="sepia">베이지</button>
+        <button type="button" data-v="dark">어둡게</button>
+      </div>
+    </div>
+    <div class="row">
+      <span>글꼴</span>
+      <div class="seg" id="font">
+        <button type="button" data-v="sans">고딕</button>
+        <button type="button" data-v="serif">명조</button>
+      </div>
+    </div>
+  </section>
+  <p class="hint">읽기 모드에서 <kbd>Esc</kbd>를 누르면 닫힙니다.</p>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>글자·바이트 세기</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>글자·바이트 세기</h1>
+  <textarea id="text" rows="6" placeholder="여기에 글을 붙여 넣거나, 아래 버튼으로 페이지에서 드래그한 글을 가져오세요."></textarea>
+  <div class="btns">
+    <button id="btnSel" type="button">선택한 글 가져오기</button>
+    <button id="btnClr" type="button">비우기</button>
+  </div>
+  <p id="msg" class="msg" role="status"></p>
+
+  <table class="stats">
+    <tr><th>글자 수</th><td id="sChars">0</td><th>공백 제외</th><td id="sNoSpace">0</td></tr>
+    <tr><th>바이트 (한글 2)</th><td id="sCp949">0</td><th>바이트 (한글 3)</th><td id="sUtf8">0</td></tr>
+    <tr><th>낱말 수</th><td id="sWords">0</td><th>줄 수</th><td id="sLines">0</td></tr>
+  </table>
+
+  <section>
+    <h2>바이트 한도</h2>
+    <div class="row">
+      <select id="mode" aria-label="바이트 계산 기준">
+        <option value="cp949">한글 2바이트 (EUC-KR/CP949)</option>
+        <option value="utf8">한글 3바이트 (UTF-8)</option>
+      </select>
+      <input id="limit" type="number" min="1" max="100000" placeholder="한도" aria-label="바이트 한도">
+    </div>
+    <label class="check"><input id="crlf" type="checkbox"> 줄바꿈을 2바이트(\r\n)로 계산</label>
+    <div id="limitResult" class="limit"></div>
+    <div class="btns">
+      <button id="btnCut" type="button">한도에 맞춰 자르기</button>
+      <button id="btnPad" type="button">공백으로 채워 복사</button>
+    </div>
+  </section>
+
+  <p class="hint">EUC-KR 기준은 한글·한자 등 2바이트, 영문·숫자·기호 1바이트로 센 <b>어림값</b>입니다. 이모지는 '?' 1바이트로 칩니다.</p>
+  <script src="count-core.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>한글 글쓰기 점검기</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>한글 글쓰기 점검기</h1>
+  <textarea id="text" rows="7" placeholder="점검할 글을 붙여 넣거나, 아래 버튼으로 페이지에서 드래그한 글을 가져오세요."></textarea>
+  <div class="btns">
+    <button id="btnSel" type="button">선택한 글 가져오기</button>
+    <button id="btnClr" type="button">비우기</button>
+  </div>
+  <p id="msg" class="msg" role="status"></p>
+
+  <details class="opts">
+    <summary>기준 바꾸기</summary>
+    <label>긴 문장 기준 <input id="longLen" type="number" min="30" max="300"> 자</label>
+    <label>긴 문단 기준 <input id="paraMax" type="number" min="100" max="2000"> 자</label>
+    <label>반복 낱말 기준 <input id="repeatMin" type="number" min="3" max="30"> 번</label>
+  </details>
+
+  <div id="summary" class="summary" hidden></div>
+  <div id="result"></div>
+  <p class="hint">조사·어미를 정확히 나누지 않는 <b>규칙 검사</b>라서 틀릴 수 있습니다. 일부러 쓴 표현이면 무시하세요.</p>
+  <script src="check-core.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

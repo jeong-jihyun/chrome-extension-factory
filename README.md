@@ -24,11 +24,11 @@
 | 03-bookmarks | 북마크 | 1 |
 | 04-note-taking | 메모 | 1 |
 | 05-web-clipper | 웹 클리퍼 | 1 |
-| 06-reading-mode | 읽기 모드 | 0 |
-| 07-translation | 번역 | 0 |
-| 08-language-learning | 언어 학습 | 0 |
-| 09-text-tools | 텍스트 도구 | 0 |
-| 10-writing-assistant | 글쓰기 도우미 | 0 |
+| 06-reading-mode | 읽기 모드 | 1 |
+| 07-translation | 번역 | 1 |
+| 08-language-learning | 언어 학습 | 1 |
+| 09-text-tools | 텍스트 도구 | 1 |
+| 10-writing-assistant | 글쓰기 도우미 | 1 |
 | 11-ai-assistant | AI 도우미 | 0 |
 | 12-prompt-tools | 프롬프트 도구 | 0 |
 | 13-seo-tools | SEO 도구 | 0 |

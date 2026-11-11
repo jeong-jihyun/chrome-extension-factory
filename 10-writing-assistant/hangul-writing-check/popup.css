@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body { width: 400px; margin: 0; padding: 14px; font: 14px/1.5 "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; color: #1f2328; }
+h1 { font-size: 16px; margin: 0 0 8px; }
+textarea { width: 100%; padding: 8px; border: 1px solid #d1d5db; border-radius: 8px; font: inherit; font-size: 13.5px; resize: vertical; }
+button { font: inherit; font-size: 13px; cursor: pointer; }
+.btns { display: flex; gap: 8px; margin-top: 6px; }
+.btns button { flex: 1; padding: 6px 8px; border: 1px solid #d1d5db; background: #fff; border-radius: 6px; }
+.btns button:hover { border-color: #2563eb; color: #2563eb; }
+.msg { min-height: 18px; margin: 6px 0 0; font-size: 12.5px; color: #b45309; }
+.opts { margin: 4px 0 8px; font-size: 13px; }
+.opts summary { cursor: pointer; color: #374151; }
+.opts label { display: block; margin: 6px 0 0 4px; }
+.opts input { width: 70px; padding: 3px 6px; border: 1px solid #d1d5db; border-radius: 6px; font: inherit; }
+.summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-bottom: 10px; }
+.summary div { border: 1px solid #e5e7eb; border-radius: 8px; padding: 6px 8px; }
+.summary b { display: block; font-size: 16px; }
+.summary span { font-size: 11.5px; color: #6b7280; }
+.issue { border: 1px solid #fde68a; background: #fffbeb; border-radius: 8px; padding: 8px 10px; margin-bottom: 8px; }
+.issue h3 { font-size: 13.5px; margin: 0; }
+.issue p { margin: 2px 0 0; font-size: 12.5px; color: #4b5563; }
+.issue ul { margin: 6px 0 0; padding-left: 18px; font-size: 12.5px; color: #374151; }
+.issue li { word-break: break-word; }
+.ok { border: 1px solid #bbf7d0; background: #f0fdf4; border-radius: 8px; padding: 8px 10px; font-size: 13px; }
+.hint { margin: 10px 0 0; font-size: 12px; color: #6b7280; }
+[hidden] { display: none !important; }

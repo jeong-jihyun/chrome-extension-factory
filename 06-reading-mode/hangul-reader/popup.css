@@ -1,0 +1,18 @@
+* { box-sizing: border-box; }
+body { width: 300px; margin: 0; padding: 14px; font: 14px/1.5 "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; color: #1f2328; }
+h1 { font-size: 16px; margin: 0 0 10px; }
+button { font: inherit; cursor: pointer; }
+.primary { width: 100%; padding: 10px; border: 0; border-radius: 8px; background: #2563eb; color: #fff; font-weight: 600; }
+.primary:hover { background: #1d4ed8; }
+.msg { min-height: 20px; margin: 8px 0; font-size: 12.5px; color: #b45309; }
+.opts { display: flex; flex-direction: column; gap: 10px; }
+label { display: block; font-size: 13px; }
+label output { float: right; color: #6b7280; }
+input[type=range] { width: 100%; margin: 2px 0 0; }
+.row { display: flex; align-items: center; justify-content: space-between; font-size: 13px; }
+.seg { display: flex; border: 1px solid #d1d5db; border-radius: 6px; overflow: hidden; }
+.seg button { border: 0; background: #fff; padding: 4px 10px; font-size: 13px; }
+.seg button + button { border-left: 1px solid #d1d5db; }
+.seg button.on { background: #2563eb; color: #fff; }
+.hint { margin: 12px 0 0; font-size: 12px; color: #6b7280; }
+kbd { border: 1px solid #d1d5db; border-bottom-width: 2px; border-radius: 4px; padding: 0 4px; font-size: 11px; }

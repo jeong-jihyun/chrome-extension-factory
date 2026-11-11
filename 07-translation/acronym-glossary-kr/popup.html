@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>영문 약어 한글 풀이</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>영문 약어 한글 풀이</h1>
+  <button id="toggle" class="primary" type="button" disabled>이 페이지 약어 풀이 켜기</button>
+  <p id="msg" class="msg" role="status"></p>
+
+  <label class="check"><input id="useBuiltin" type="checkbox" checked> 내장 사전 사용 (<span id="builtinCount"></span>개)</label>
+
+  <section>
+    <h2>내 용어 추가</h2>
+    <form id="addForm" autocomplete="off">
+      <div class="grid">
+        <input id="fKey" placeholder="약어 (예: SKP)" maxlength="20" required>
+        <input id="fKo" placeholder="한글 이름" maxlength="40" required>
+      </div>
+      <input id="fEn" placeholder="영문 풀이 (선택)" maxlength="80">
+      <input id="fDesc" placeholder="쉬운 설명 (선택)" maxlength="200">
+      <button type="submit">추가</button>
+    </form>
+    <ul id="userList" class="list"></ul>
+  </section>
+
+  <p class="hint">켠 뒤에 새로 불러온 글에는 적용되지 않습니다. 다시 켜면 새로 찾습니다.</p>
+  <script src="glossary.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
