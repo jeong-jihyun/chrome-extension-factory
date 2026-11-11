@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>마크다운 → 블로그 HTML</title>
+  <link rel="stylesheet" href="popup.css">
+  <style>
+    body { width: 560px; }
+    .cols { display: flex; gap: 10px; }
+    .cols > div { flex: 1; min-width: 0; }
+    #preview { border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px 10px; height: 250px; overflow: auto; font-size: 13.5px; }
+    #preview h1, #preview h2, #preview h3 { margin: 8px 0 4px; }
+    #preview pre { background: #f3f4f6; padding: 6px; border-radius: 6px; overflow: auto; }
+    #preview blockquote { margin: 6px 0; padding-left: 10px; border-left: 3px solid #d1d5db; color: #4b5563; }
+    #preview img { max-width: 100%; }
+    #src { height: 250px; }
+  </style>
+</head>
+<body>
+  <h1>마크다운 → 블로그 HTML</h1>
+  <div class="cols">
+    <div><label for="src">마크다운으로 쓴 글</label><textarea id="src" placeholder="# 제목&#10;&#10;본문은 **굵게**, [링크](https://example.com) 처럼 씁니다."></textarea></div>
+    <div><label>미리보기</label><div id="preview" aria-live="polite"></div></div>
+  </div>
+  <label class="check"><input id="newWin" type="checkbox">링크를 새 창으로 열기 (target="_blank")</label>
+  <div class="btns">
+    <button id="copyHtml" class="primary" type="button">HTML 복사하기</button>
+    <button id="clear" type="button">지우기</button>
+  </div>
+  <p id="msg" class="msg" role="status"></p>
+  <details><summary>변환된 HTML 보기</summary><textarea id="html" rows="6" readonly></textarea></details>
+  <p class="hint">제목(#~######), 굵게, 기울임, `코드`, 코드 블록, 목록, 인용(&gt;), 구분선, 링크, 이미지를 지원합니다. 표·각주는 지원하지 않습니다. 글은 이 브라우저에만 임시 저장되고 밖으로 보내지 않습니다.</p>
+  <script src="md-core.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

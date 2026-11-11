@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "AI 토큰·비용 어림 계산기",
+  "version": "1.0.0",
+  "description": "프롬프트 글을 붙여 넣으면 한글 기준으로 토큰 수와 예상 비용, 컨텍스트 사용 비율을 어림해 줍니다. 서버 없이 브라우저 안에서만 계산합니다.",
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI 토큰·비용 어림 계산기",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+  }
+}

@@ -12,3 +12,8 @@
 | 2026-11-12 | 08-language-learning | 영어 단어 상자 | [08-language-learning/word-box](08-language-learning/word-box) | 단어를 우클릭 한 번으로 예문과 함께 담고 간격 반복으로 복습, CSV 내보내기 |
 | 2026-11-12 | 09-text-tools | 글자·바이트 세기 | [09-text-tools/byte-counter-kr](09-text-tools/byte-counter-kr) | 글자 수와 바이트(한글 2·3바이트)를 세고 한도에 맞춰 자르기·공백 채우기 |
 | 2026-11-12 | 10-writing-assistant | 한글 글쓰기 점검기 | [10-writing-assistant/hangul-writing-check](10-writing-assistant/hangul-writing-check) | 긴 문장·끝말 반복·군더더기·이중 피동을 규칙으로 찾아 고칠 점을 알려 줌 |
+| 2026-11-12 | 11-ai-assistant | AI 토큰·비용 어림 계산기 | [11-ai-assistant/token-cost-estimator](11-ai-assistant/token-cost-estimator) | 프롬프트 글의 토큰 수와 예상 비용·컨텍스트 사용 비율을 한글 기준으로 어림 |
+| 2026-11-12 | 12-prompt-tools | 프롬프트 템플릿 상자 | [12-prompt-tools/prompt-template-box](12-prompt-tools/prompt-template-box) | {{변수}} 프롬프트를 저장하고 빈칸만 채워 복사, 백업 파일 지원 |
+| 2026-11-12 | 13-seo-tools | 한국형 SEO 메타 점검 | [13-seo-tools/seo-meta-check-kr](13-seo-tools/seo-meta-check-kr) | 제목·설명·H1·alt·공유 태그를 점검하고 검색 결과 미리보기 표시 |
+| 2026-11-12 | 14-marketing | UTM 링크 만들기 (국내 채널) | [14-marketing/utm-link-builder](14-marketing/utm-link-builder) | 네이버·카카오 등 국내 채널 프리셋으로 한글 캠페인 UTM 링크 생성 |
+| 2026-11-12 | 15-blog-tools | 마크다운 → 블로그 HTML | [15-blog-tools/markdown-to-blog-html](15-blog-tools/markdown-to-blog-html) | 마크다운을 미리 보고 블로그 HTML 모드용 깨끗한 HTML로 복사 |

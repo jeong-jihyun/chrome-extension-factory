@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "UTM 링크 만들기 (국내 채널)",
+  "version": "1.0.0",
+  "description": "지금 보는 페이지 주소에 UTM 꼬리표를 붙입니다. 네이버 블로그·카카오톡·인스타그램 등 국내 채널 프리셋과 한글 캠페인 이름을 지원하고, 만든 링크 기록을 내 브라우저에 저장합니다.",
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "UTM 링크 만들기",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+  }
+}

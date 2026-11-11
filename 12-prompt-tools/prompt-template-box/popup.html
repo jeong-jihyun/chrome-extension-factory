@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>프롬프트 템플릿 상자</title>
+  <link rel="stylesheet" href="popup.css">
+  <style>
+    body { width: 420px; }
+    .tpl { display: flex; gap: 6px; align-items: center; }
+    .tpl select { flex: 1; }
+    .tpl button { flex: none; }
+    #preview { white-space: pre-wrap; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px; font-size: 13px; max-height: 160px; overflow: auto; min-height: 40px; }
+    .vars label { margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <h1>프롬프트 템플릿 상자</h1>
+  <div class="tpl">
+    <select id="pick" aria-label="템플릿 고르기"></select>
+    <button id="new" type="button">새로 만들기</button>
+  </div>
+  <p id="empty" class="hint" hidden>저장된 템플릿이 없습니다. <b>새로 만들기</b>를 눌러 첫 템플릿을 만들어 보세요.</p>
+
+  <div id="useArea" hidden>
+    <h2>빈칸 채우기</h2>
+    <div id="vars" class="vars"></div>
+    <h2>완성된 프롬프트</h2>
+    <div id="preview"></div>
+    <div class="btns">
+      <button id="copy" class="primary" type="button">복사하기</button>
+      <button id="edit" type="button">고치기</button>
+    </div>
+  </div>
+
+  <div id="editArea" hidden>
+    <h2>템플릿 만들기·고치기</h2>
+    <label for="name">이름</label>
+    <input id="name" type="text" maxlength="80" placeholder="예: 회의록 정리">
+    <label for="body">내용 (빈칸은 {{이름}} 으로 씁니다)</label>
+    <textarea id="body" rows="7" placeholder="다음 회의 내용을 {{형식}}로 정리해 줘.&#10;&#10;{{회의 내용}}"></textarea>
+    <div class="btns">
+      <button id="save" class="primary" type="button">저장</button>
+      <button id="cancel" type="button">취소</button>
+      <button id="del" type="button">삭제</button>
+    </div>
+  </div>
+
+  <p id="msg" class="msg" role="status"></p>
+  <details>
+    <summary>백업·복원</summary>
+    <div class="btns">
+      <button id="export" type="button">파일로 내보내기</button>
+      <button id="import" type="button">파일 불러오기</button>
+    </div>
+    <input id="file" type="file" accept="application/json,.json" hidden>
+  </details>
+  <p class="hint">저장한 템플릿은 이 브라우저에만 보관되며 밖으로 보내지 않습니다.</p>
+  <script src="template-core.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

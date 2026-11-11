@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+body { width: 400px; margin: 0; padding: 14px; font: 14px/1.5 "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; color: #1f2328; background: #fff; }
+h1 { font-size: 16px; margin: 0 0 8px; }
+h2 { font-size: 13px; margin: 12px 0 6px; color: #374151; }
+label { display: block; font-size: 12.5px; color: #374151; margin: 8px 0 2px; }
+textarea, input[type=text], input[type=url], input[type=number], select { width: 100%; padding: 7px 8px; border: 1px solid #d1d5db; border-radius: 8px; font: inherit; font-size: 13.5px; background: #fff; color: inherit; }
+textarea { resize: vertical; }
+button { font: inherit; font-size: 13px; cursor: pointer; padding: 6px 10px; border: 1px solid #d1d5db; background: #fff; border-radius: 6px; color: inherit; }
+button:hover { border-color: #2563eb; color: #2563eb; }
+button.primary { background: #2563eb; border-color: #2563eb; color: #fff; }
+button.primary:hover { background: #1d4ed8; color: #fff; }
+.btns { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+.btns button { flex: 1; min-width: 80px; }
+.row { display: flex; gap: 8px; }
+.row > * { flex: 1; }
+.msg { min-height: 18px; margin: 6px 0 0; font-size: 12.5px; color: #b45309; }
+.hint { margin: 10px 0 0; font-size: 12px; color: #6b7280; }
+table.stats { width: 100%; border-collapse: collapse; margin-top: 6px; }
+.stats th { text-align: left; font-weight: 400; color: #6b7280; font-size: 12.5px; padding: 4px 0; }
+.stats td { text-align: right; font-weight: 700; font-size: 15px; padding: 4px 0; font-variant-numeric: tabular-nums; }
+.check { display: block; margin: 6px 0; font-size: 12.5px; }
+.check input { margin-right: 6px; }
+ul.list { list-style: none; margin: 6px 0 0; padding: 0; }
+ul.list li { padding: 6px 8px; border: 1px solid #e5e7eb; border-radius: 6px; margin-bottom: 6px; font-size: 13px; }
+.ok { color: #15803d; } .warn { color: #b45309; } .bad { color: #b91c1c; }
+details { margin-top: 10px; }
+summary { cursor: pointer; font-size: 13px; color: #374151; }

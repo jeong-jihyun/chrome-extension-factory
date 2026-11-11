@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>AI 토큰·비용 어림 계산기</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>AI 토큰·비용 어림 계산기</h1>
+  <textarea id="text" rows="6" placeholder="여기에 프롬프트를 붙여 넣으세요"></textarea>
+  <div class="btns">
+    <button id="getSel" type="button">선택한 글 가져오기</button>
+    <button id="clear" type="button">지우기</button>
+  </div>
+  <p id="msg" class="msg" role="status"></p>
+
+  <table class="stats">
+    <tr><th>글자 수</th><td id="rChars">0</td></tr>
+    <tr><th>어림 입력 토큰</th><td id="rTokens">0</td></tr>
+    <tr><th>입력 비용</th><td id="rIn">0</td></tr>
+    <tr><th>예상 출력 비용</th><td id="rOut">0</td></tr>
+    <tr><th>합계</th><td id="rTotal">0</td></tr>
+    <tr><th>컨텍스트 사용</th><td id="rCtx">-</td></tr>
+  </table>
+
+  <details open>
+    <summary>내 설정 (저장됨)</summary>
+    <div class="row">
+      <div><label for="inPrice">입력 단가 (100만 토큰당)</label><input id="inPrice" type="number" min="0" step="any"></div>
+      <div><label for="outPrice">출력 단가 (100만 토큰당)</label><input id="outPrice" type="number" min="0" step="any"></div>
+    </div>
+    <div class="row">
+      <div><label for="outTokens">예상 출력 토큰</label><input id="outTokens" type="number" min="0" step="1"></div>
+      <div><label for="ctx">컨텍스트 한도(토큰)</label><input id="ctx" type="number" min="0" step="1"></div>
+    </div>
+    <div class="row">
+      <div><label for="unit">돈 단위 표시</label><input id="unit" type="text" maxlength="6"></div>
+      <div><label for="hangul">한글 1글자당 토큰</label><input id="hangul" type="number" min="0" step="0.05"></div>
+    </div>
+    <div class="row">
+      <div><label for="latin">영문·숫자 1글자당 토큰</label><input id="latin" type="number" min="0" step="0.05"></div>
+      <div><label for="other">그 밖 글자 1개당 토큰</label><input id="other" type="number" min="0" step="0.05"></div>
+    </div>
+  </details>
+  <p class="hint">토큰 수는 글자 종류별 비율로 계산한 <b>어림값</b>입니다. 모델마다 실제 값이 다릅니다. 단가는 쓰는 서비스의 가격표를 보고 직접 넣어 주세요.</p>
+  <script src="token-core.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

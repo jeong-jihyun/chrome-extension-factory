@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "마크다운 → 블로그 HTML",
+  "version": "1.0.0",
+  "description": "마크다운으로 쓴 글을 미리 보고, 티스토리 등 블로그의 HTML 모드에 붙여 넣을 깨끗한 HTML로 바꿔 복사합니다. 서버 없이 브라우저 안에서만 변환합니다.",
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "마크다운 → 블로그 HTML",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+  }
+}

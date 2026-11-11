@@ -29,11 +29,11 @@
 | 08-language-learning | 언어 학습 | 1 |
 | 09-text-tools | 텍스트 도구 | 1 |
 | 10-writing-assistant | 글쓰기 도우미 | 1 |
-| 11-ai-assistant | AI 도우미 | 0 |
-| 12-prompt-tools | 프롬프트 도구 | 0 |
-| 13-seo-tools | SEO 도구 | 0 |
-| 14-marketing | 마케팅 | 0 |
-| 15-blog-tools | 블로그 도구 | 0 |
+| 11-ai-assistant | AI 도우미 | 1 |
+| 12-prompt-tools | 프롬프트 도구 | 1 |
+| 13-seo-tools | SEO 도구 | 1 |
+| 14-marketing | 마케팅 | 1 |
+| 15-blog-tools | 블로그 도구 | 1 |
 | 16-social-media | 소셜 미디어 | 0 |
 | 17-ecommerce | 전자상거래 | 0 |
 | 18-price-tracker | 가격 추적 | 0 |

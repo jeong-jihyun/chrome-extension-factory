@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "한국형 SEO 메타 점검",
+  "version": "1.0.0",
+  "description": "지금 보는 페이지의 제목·설명·대표 이미지·제목 태그·alt 누락을 한눈에 점검하고, 네이버·구글 검색 결과에서 보일 모습을 미리 봅니다.",
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "한국형 SEO 메타 점검",
+    "default_icon": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+  }
+}

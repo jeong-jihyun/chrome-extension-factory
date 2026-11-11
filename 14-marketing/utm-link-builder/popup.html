@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>UTM 링크 만들기</title>
+  <link rel="stylesheet" href="popup.css">
+  <style>
+    #out { word-break: break-all; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 8px; font-size: 12.5px; min-height: 36px; }
+    .hrow { display: flex; gap: 6px; align-items: center; }
+    .hrow span { flex: 1; word-break: break-all; font-size: 12px; }
+    .hrow button { flex: none; padding: 2px 8px; }
+  </style>
+</head>
+<body>
+  <h1>UTM 링크 만들기 (국내 채널)</h1>
+  <label for="url">연결할 주소</label>
+  <input id="url" type="url" placeholder="https://example.com/page">
+  <label for="preset">채널 프리셋 (고르면 아래 두 칸이 채워집니다)</label>
+  <select id="preset"></select>
+  <div class="row">
+    <div><label for="source">source (채널)</label><input id="source" type="text"></div>
+    <div><label for="medium">medium (방식)</label><input id="medium" type="text"></div>
+  </div>
+  <label for="campaign">campaign (캠페인 이름, 한글 가능)</label>
+  <input id="campaign" type="text" placeholder="예: 11월_신제품">
+  <div class="row">
+    <div><label for="term">term (선택)</label><input id="term" type="text"></div>
+    <div><label for="content">content (선택)</label><input id="content" type="text"></div>
+  </div>
+  <label class="check"><input id="snake" type="checkbox" checked>영문은 소문자로, 띄어쓰기는 _ 로 바꾸기</label>
+  <div class="btns">
+    <button id="make" class="primary" type="button">링크 만들기</button>
+    <button id="copy" type="button">복사하기</button>
+  </div>
+  <p id="msg" class="msg" role="status"></p>
+  <div id="out" aria-live="polite"></div>
+  <details>
+    <summary>최근 만든 링크 (최대 20개)</summary>
+    <ul id="hist" class="list"></ul>
+    <div class="btns"><button id="clearHist" type="button">기록 지우기</button></div>
+  </details>
+  <p class="hint">UTM 링크를 내가 쓰는 채널에 직접 붙여 쓰는 용도입니다. 입력한 내용은 이 브라우저에만 저장되고 밖으로 보내지 않습니다.</p>
+  <script src="utm-core.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
