@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><title>해시태그 세트 상자</title><link rel="stylesheet" href="popup.css"></head>
+<body><main>
+  <h1>해시태그 세트 상자</h1>
+  <label for="name">세트 이름</label>
+  <input id="name" maxlength="40" placeholder="예: 카페 사진">
+  <label for="tags">해시태그 (띄어쓰기·쉼표·줄바꿈으로 구분, # 없이 써도 됨)</label>
+  <textarea id="tags" placeholder="#맛집 #카페스타그램 일상"></textarea>
+  <div class="row" style="margin-top:8px">
+    <span class="muted" id="count">0개</span>
+    <button id="save" class="primary">저장</button>
+    <button id="clear">비우기</button>
+  </div>
+  <div class="msg" id="msg" role="status"></div>
+  <h1 style="margin-top:8px">저장한 세트</h1>
+  <div id="list"></div>
+  <div class="muted" id="empty">아직 저장한 세트가 없습니다.</div>
+  <div class="row" style="margin-top:10px">
+    <button id="export">백업 파일 저장</button>
+    <button id="import">백업 불러오기</button>
+  </div>
+  <input type="file" id="file" accept="application/json" hidden>
+</main><script src="popup.js"></script></body></html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><title>평균 단가 계획기</title><link rel="stylesheet" href="popup.css"></head>
+<body><main>
+  <h1>평균 단가 계획기</h1>
+  <div class="muted">산 가격과 수량을 한 줄씩 적으세요. 통화는 상관없습니다(원·달러 등 같은 단위로).</div>
+  <div id="lots"></div>
+  <div class="row" style="margin-top:6px"><button id="addLot">매수 줄 추가</button><button id="reset" class="danger">모두 지우기</button></div>
+  <label for="cur">현재가 (선택)</label><input id="cur" type="number" min="0" step="any">
+  <div class="card" id="sum"><div class="muted">매수 내역을 넣어 주세요.</div></div>
+  <h1 style="margin-top:12px">추가 매수 계획</h1>
+  <div class="row">
+    <div><label for="pbuy">추가 매수가</label><input id="pbuy" type="number" min="0" step="any"></div>
+    <div><label for="tgt">목표 평단</label><input id="tgt" type="number" min="0" step="any"></div>
+    <div><label for="qbuy">살 수량(선택)</label><input id="qbuy" type="number" min="0" step="any"></div>
+  </div>
+  <div class="card" id="plan"><div class="muted">추가 매수가와 목표 평단(또는 살 수량)을 넣으세요.</div></div>
+  <div class="muted" style="margin-top:8px">수수료·세금은 계산에 넣지 않았습니다. 투자 조언이 아닙니다.</div>
+</main><script src="calc.js"></script><script src="popup.js"></script></body></html>

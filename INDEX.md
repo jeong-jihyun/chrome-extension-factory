@@ -17,3 +17,8 @@
 | 2026-11-12 | 13-seo-tools | 한국형 SEO 메타 점검 | [13-seo-tools/seo-meta-check-kr](13-seo-tools/seo-meta-check-kr) | 제목·설명·H1·alt·공유 태그를 점검하고 검색 결과 미리보기 표시 |
 | 2026-11-12 | 14-marketing | UTM 링크 만들기 (국내 채널) | [14-marketing/utm-link-builder](14-marketing/utm-link-builder) | 네이버·카카오 등 국내 채널 프리셋으로 한글 캠페인 UTM 링크 생성 |
 | 2026-11-12 | 15-blog-tools | 마크다운 → 블로그 HTML | [15-blog-tools/markdown-to-blog-html](15-blog-tools/markdown-to-blog-html) | 마크다운을 미리 보고 블로그 HTML 모드용 깨끗한 HTML로 복사 |
+| 2026-11-13 | 16-social-media | 해시태그 세트 상자 | [16-social-media/hashtag-set-box](16-social-media/hashtag-set-box) | 자주 쓰는 해시태그 묶음을 이름 붙여 저장하고 한 번에 복사, 중복 제거와 30개 한도 안내 |
+| 2026-11-13 | 17-ecommerce | 단위가격 비교 계산기 | [17-ecommerce/unit-price-calc-kr](17-ecommerce/unit-price-calc-kr) | 가격·용량·묶음 수로 100g당·100ml당·1개당 가격을 계산해 최저가 표시 |
+| 2026-11-13 | 18-price-tracker | 가격 메모 (가격 변화 기록) | [18-price-tracker/price-memo-kr](18-price-tracker/price-memo-kr) | 가격을 드래그해 우클릭으로 기록하고 날짜별 변화와 최저가 확인 |
+| 2026-11-13 | 19-finance-trading | 주식 수수료·세금 손익 계산기 | [19-finance-trading/stock-fee-tax-calc-kr](19-finance-trading/stock-fee-tax-calc-kr) | 수수료와 거래세를 반영한 순손익과 손익분기 매도가 계산, 세율 직접 수정 |
+| 2026-11-13 | 20-stock-crypto | 평균 단가 계획기 (물타기 계산) | [20-stock-crypto/avg-price-planner-kr](20-stock-crypto/avg-price-planner-kr) | 분할 매수 평균 단가와 목표 평단까지 필요한 추가 매수 수량 계산 |

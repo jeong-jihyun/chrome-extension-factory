@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "평균 단가 계획기 (물타기 계산)",
+  "version": "1.0.0",
+  "description": "여러 번 나눠 산 주식·코인의 평균 단가를 계산하고, 목표 평단까지 몇 개를 더 사야 하는지 알려 줍니다. 계정·서버 없음.",
+  "icons": {"16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png"},
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "평균 단가 계획기",
+    "default_icon": {"16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png"}
+  }
+}

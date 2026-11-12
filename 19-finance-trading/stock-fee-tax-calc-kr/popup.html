@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><title>주식 수수료·세금 손익 계산기</title><link rel="stylesheet" href="popup.css"></head>
+<body><main>
+  <h1>주식 수수료·세금 손익 계산기</h1>
+  <label for="market">시장</label>
+  <select id="market"></select>
+  <div class="row">
+    <div><label for="buy">매수가(원)</label><input id="buy" type="number" min="0" step="any"></div>
+    <div><label for="sell">매도가(원)</label><input id="sell" type="number" min="0" step="any"></div>
+    <div><label for="qty">수량(주)</label><input id="qty" type="number" min="0" step="any"></div>
+  </div>
+  <div class="row">
+    <div><label for="feeBuy">매수 수수료(%)</label><input id="feeBuy" type="number" min="0" step="any"></div>
+    <div><label for="feeSell">매도 수수료(%)</label><input id="feeSell" type="number" min="0" step="any"></div>
+    <div><label for="tax">세금(%)</label><input id="tax" type="number" min="0" step="any"></div>
+  </div>
+  <div class="card" id="result"><div class="muted">매수가·매도가·수량을 넣어 주세요.</div></div>
+  <div class="muted" style="margin-top:8px">수수료율 0.015%는 예시입니다. 내 증권사 값으로 고쳐 쓰세요. 세율은 2026년 1월 이후 매도분 참고값이며 공식 자료로 확인하세요. 투자 조언이 아닙니다.</div>
+</main><script src="calc.js"></script><script src="popup.js"></script></body></html>

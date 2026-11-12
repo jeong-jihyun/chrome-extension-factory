@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "해시태그 세트 상자",
+  "version": "1.0.0",
+  "description": "자주 쓰는 해시태그 묶음을 이름 붙여 저장하고, 한 번 눌러 복사합니다. 중복 제거와 인스타그램 30개 한도 안내. 계정·서버 없음.",
+  "icons": {"16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png"},
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "해시태그 세트 상자",
+    "default_icon": {"16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png"}
+  }
+}

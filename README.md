@@ -34,11 +34,11 @@
 | 13-seo-tools | SEO 도구 | 1 |
 | 14-marketing | 마케팅 | 1 |
 | 15-blog-tools | 블로그 도구 | 1 |
-| 16-social-media | 소셜 미디어 | 0 |
-| 17-ecommerce | 전자상거래 | 0 |
-| 18-price-tracker | 가격 추적 | 0 |
-| 19-finance-trading | 금융·트레이딩 | 0 |
-| 20-stock-crypto | 주식·코인 | 0 |
+| 16-social-media | 소셜 미디어 | 1 |
+| 17-ecommerce | 전자상거래 | 1 |
+| 18-price-tracker | 가격 추적 | 1 |
+| 19-finance-trading | 금융·트레이딩 | 1 |
+| 20-stock-crypto | 주식·코인 | 1 |
 | 21-developer-tools | 개발자 도구 | 0 |
 | 22-devtools-debugging | 디버깅 | 0 |
 | 23-api-testing | API 테스트 | 0 |
