@@ -22,3 +22,8 @@
 | 2026-11-13 | 18-price-tracker | 가격 메모 (가격 변화 기록) | [18-price-tracker/price-memo-kr](18-price-tracker/price-memo-kr) | 가격을 드래그해 우클릭으로 기록하고 날짜별 변화와 최저가 확인 |
 | 2026-11-13 | 19-finance-trading | 주식 수수료·세금 손익 계산기 | [19-finance-trading/stock-fee-tax-calc-kr](19-finance-trading/stock-fee-tax-calc-kr) | 수수료와 거래세를 반영한 순손익과 손익분기 매도가 계산, 세율 직접 수정 |
 | 2026-11-13 | 20-stock-crypto | 평균 단가 계획기 (물타기 계산) | [20-stock-crypto/avg-price-planner-kr](20-stock-crypto/avg-price-planner-kr) | 분할 매수 평균 단가와 목표 평단까지 필요한 추가 매수 수량 계산 |
+| 2026-11-14 | 21-developer-tools | JSON 정리·검사 (한글) | [21-developer-tools/json-format-kr](21-developer-tools/json-format-kr) | JSON을 보기 좋게 정리·압축하고 오류 위치를 한글로 알려 줌 |
+| 2026-11-14 | 22-devtools-debugging | 버그 신고 환경 정보 모으기 | [22-devtools-debugging/bug-report-env-kr](22-devtools-debugging/bug-report-env-kr) | 주소·브라우저·화면 크기 등을 한글 버그 신고 양식으로 모아 복사 |
+| 2026-11-14 | 23-api-testing | HTTP 요청 시험기 (한글) | [23-api-testing/http-request-tester-kr](23-api-testing/http-request-tester-kr) | 주소·헤더·본문을 보내 상태·시간·응답을 확인, 사이트 권한은 필요할 때만 선택 허용 |
+| 2026-11-14 | 24-css-design-tools | CSS 단위·clamp 계산기 | [24-css-design-tools/css-unit-calc-kr](24-css-design-tools/css-unit-calc-kr) | px·rem·em·vw 변환과 반응형 글자 크기 clamp() 값 생성 |
+| 2026-11-14 | 25-color-font-tools | 글자색 대비 검사기 (WCAG) | [25-color-font-tools/color-contrast-kr](25-color-font-tools/color-contrast-kr) | 글자·배경색 대비를 계산해 AA·AAA 통과 여부와 가까운 대안 색 제안 |

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>글자색 대비 검사기</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<h1>글자색 대비 검사기</h1>
+<div class="pair">
+  <div class="col">
+    <label for="fg">글자색</label>
+    <div class="inp"><input type="color" id="fgPick" value="#333333"><input type="text" id="fg" value="#333333" spellcheck="false"><button id="fgDrop" class="small" hidden>스포이트</button></div>
+  </div>
+  <button id="swap" title="글자색과 배경색 바꾸기">⇄</button>
+  <div class="col">
+    <label for="bg">배경색</label>
+    <div class="inp"><input type="color" id="bgPick" value="#ffffff"><input type="text" id="bg" value="#ffffff" spellcheck="false"><button id="bgDrop" class="small" hidden>스포이트</button></div>
+  </div>
+</div>
+<div id="preview"><strong>가나다라 Aa 12345</strong><br>글자가 잘 보이는지 확인해 보세요. 이것은 보통 크기의 글자입니다.</div>
+<div id="ratio"></div>
+<table id="table"></table>
+<div id="suggest"></div>
+<div id="formats"></div>
+<div id="msg" role="status"></div>
+<p class="note">색 값은 이 화면 안에서만 계산하며 저장하는 것은 마지막 두 색뿐입니다.</p>
+<script src="contrast.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

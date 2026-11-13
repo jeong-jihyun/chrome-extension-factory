@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>JSON 정리·검사</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<h1>JSON 정리·검사</h1>
+<textarea id="input" spellcheck="false" placeholder="여기에 JSON을 붙여 넣으세요"></textarea>
+<div class="row">
+  <button id="format" class="primary">보기 좋게 정리</button>
+  <button id="minify">한 줄로 줄이기</button>
+  <button id="check">검사만</button>
+</div>
+<div class="row">
+  <label>들여쓰기
+    <select id="indent">
+      <option value="2">공백 2칸</option>
+      <option value="4">공백 4칸</option>
+      <option value="tab">탭</option>
+    </select>
+  </label>
+  <label><input type="checkbox" id="sort"> 키 이름순 정렬</label>
+</div>
+<div id="status" role="status"></div>
+<div class="row">
+  <button id="copy">결과 복사</button>
+  <button id="clear">지우기</button>
+</div>
+<p class="note">입력한 내용은 저장하지 않고, 어디로도 보내지 않습니다.</p>
+<script src="json-tools.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

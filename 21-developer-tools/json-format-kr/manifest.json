@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "JSON 정리·검사 (한글)",
+  "version": "1.0.0",
+  "description": "JSON을 붙여 넣으면 보기 좋게 정리하고, 오류가 있으면 몇 째 줄 몇 번째 글자인지 한글로 알려 줍니다.",
+  "action": { "default_popup": "popup.html", "default_title": "JSON 정리·검사" },
+  "permissions": ["storage"],
+  "icons": { "16": "icons/icon16.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+}

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>버그 신고 환경 정보</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<h1>버그 신고 환경 정보</h1>
+<p class="desc">버그가 난 탭에서 아이콘을 누른 뒤 아래 버튼을 눌러 주세요.</p>
+<button id="collect" class="primary">이 탭 정보 모으기</button>
+<label class="opt"><input type="checkbox" id="strip" checked> 주소에서 ? 뒤(검색어·토큰 등) 지우기</label>
+<div id="status" role="status"></div>
+<textarea id="out" spellcheck="false" placeholder="모은 정보가 여기에 나옵니다. 아래 칸은 직접 적어 주세요."></textarea>
+<div class="row"><button id="copy">복사</button></div>
+<p class="note">정보는 이 화면 안에서만 만들어지고 어디로도 전송되지 않습니다.</p>
+<script src="collect.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

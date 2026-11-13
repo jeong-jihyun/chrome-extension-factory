@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>HTTP 요청 시험기</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<h1>HTTP 요청 시험기</h1>
+<div class="row">
+  <select id="method">
+    <option>GET</option><option>POST</option><option>PUT</option><option>PATCH</option><option>DELETE</option><option>HEAD</option>
+  </select>
+  <input id="url" type="text" placeholder="https://example.com/api/items" spellcheck="false">
+</div>
+<details>
+  <summary>헤더 (한 줄에 하나, 이름: 값)</summary>
+  <textarea id="headers" class="small" spellcheck="false" placeholder="Content-Type: application/json&#10;Authorization: Bearer ..."></textarea>
+</details>
+<details>
+  <summary>본문 (POST·PUT·PATCH·DELETE)</summary>
+  <textarea id="body" class="small" spellcheck="false" placeholder='{"name":"예시"}'></textarea>
+</details>
+<div class="row"><button id="send" class="primary">보내기</button><span id="state"></span></div>
+<div id="cors" class="warn" hidden>
+  <div id="corsText"></div>
+  <button id="grant">이 사이트 접근 허용하고 다시 보내기</button>
+</div>
+<div id="result" hidden>
+  <div id="summary"></div>
+  <details><summary>응답 헤더</summary><pre id="resHeaders"></pre></details>
+  <pre id="resBody"></pre>
+  <button id="copyBody">응답 본문 복사</button>
+</div>
+<details>
+  <summary>최근 주소 (헤더·본문은 저장하지 않음)</summary>
+  <div id="history"></div>
+</details>
+<p class="note">비밀번호·토큰은 저장하지 않으며, 입력한 주소로만 요청을 보냅니다.</p>
+<script src="http-tools.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+body{width:440px;margin:0;padding:12px;font:14px/1.5 "Malgun Gothic","Apple SD Gothic Neo",sans-serif;color:#1f2937}
+h1{font-size:16px;margin:0 0 6px}h2{font-size:14px;margin:12px 0 6px;border-top:1px solid #e5e7eb;padding-top:10px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 10px}label{display:flex;flex-direction:column;font-size:12.5px;color:#4b5563}
+input,select{padding:5px 6px;border:1px solid #9ca3af;border-radius:6px;font:14px inherit;color:#111}
+.results{margin-top:8px;display:grid;gap:4px}
+.line{display:flex;align-items:center;gap:8px;background:#f5f3ff;border-radius:6px;padding:4px 8px;font:13px Consolas,monospace}
+.line span.k{width:48px;color:#6d28d9;font-family:inherit}.line span.v{flex:1;word-break:break-all}
+button{padding:2px 8px;border:1px solid #9ca3af;border-radius:6px;background:#fff;cursor:pointer;font:12px inherit}
+.msg{min-height:20px;margin-top:6px;font-size:12.5px;color:#92400e}

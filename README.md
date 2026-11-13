@@ -39,11 +39,11 @@
 | 18-price-tracker | 가격 추적 | 1 |
 | 19-finance-trading | 금융·트레이딩 | 1 |
 | 20-stock-crypto | 주식·코인 | 1 |
-| 21-developer-tools | 개발자 도구 | 0 |
-| 22-devtools-debugging | 디버깅 | 0 |
-| 23-api-testing | API 테스트 | 0 |
-| 24-css-design-tools | CSS·디자인 | 0 |
-| 25-color-font-tools | 색상·글꼴 | 0 |
+| 21-developer-tools | 개발자 도구 | 1 |
+| 22-devtools-debugging | 디버깅 | 1 |
+| 23-api-testing | API 테스트 | 1 |
+| 24-css-design-tools | CSS·디자인 | 1 |
+| 25-color-font-tools | 색상·글꼴 | 1 |
 | 26-screenshot-recording | 화면 캡처·녹화 | 0 |
 | 27-image-tools | 이미지 도구 | 0 |
 | 28-video-tools | 동영상 도구 | 0 |

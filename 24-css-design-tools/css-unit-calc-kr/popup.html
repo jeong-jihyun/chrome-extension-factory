@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>CSS 단위·clamp 계산기</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<h1>CSS 단위·clamp 계산기</h1>
+<section>
+  <h2>단위 바꾸기</h2>
+  <div class="grid">
+    <label>값 <input id="val" type="number" step="any" value="24"></label>
+    <label>단위
+      <select id="unit"><option>px</option><option>rem</option><option>em</option><option>vw</option></select>
+    </label>
+    <label>기준 글자 크기(px) <input id="base" type="number" step="any" value="16" min="1"></label>
+    <label>화면 너비(px, vw용) <input id="vwpx" type="number" step="any" value="1440" min="1"></label>
+  </div>
+  <div id="conv" class="results"></div>
+</section>
+<section>
+  <h2>clamp() 글자 크기 만들기</h2>
+  <div class="grid">
+    <label>가장 작을 때 글자(px) <input id="minSize" type="number" step="any" value="16"></label>
+    <label>가장 클 때 글자(px) <input id="maxSize" type="number" step="any" value="24"></label>
+    <label>작은 화면 너비(px) <input id="minVw" type="number" step="any" value="375"></label>
+    <label>큰 화면 너비(px) <input id="maxVw" type="number" step="any" value="1440"></label>
+  </div>
+  <div id="clampOut" class="results"></div>
+  <div id="clampMsg" class="msg" role="status"></div>
+</section>
+<script src="calc.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>
